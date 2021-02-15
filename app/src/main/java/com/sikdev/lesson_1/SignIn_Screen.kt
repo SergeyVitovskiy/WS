@@ -31,7 +31,7 @@ class SignIn_Screen : AppCompatActivity() {
                             if (passwordTuo != "") {
                                 if (password == passwordTuo) {
                                     // Регистрация пользователя
-                                    
+                                    // fsd
                                     Toast.makeText(this, "Регистрация", Toast.LENGTH_LONG)
                                 } else {
                                     alertDialog("Пароли не совпадают")
