@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".SignIn_Screen">
+
+    <LinearLayout
+        android:id="@+id/layout_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/hind_vadodara_bold"
+            android:text="WorldCinema"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorOrange"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_logo"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/eText_name"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/circle_bg"
+            android:hint="Имя"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorHint"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/eText_firstName"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/circle_bg"
+            android:hint="Фамилия"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorHint"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/eText_mail"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/circle_bg"
+            android:hint="E-mail"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorHint"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/eText_password"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/circle_bg"
+            android:hint="Пароль"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorHint"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/eText_passwordTuo"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_bg"
+            android:hint="Повтарите пароль"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorHint"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/circle_orange"
+            android:onClick="onClickRegistration"
+            android:text="Зарегистрироваться"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_bg"
+            android:onClick="onClickInput"
+            android:text="У меня уже есть аккаунт"
+            android:textColor="@color/colorOrange"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>
